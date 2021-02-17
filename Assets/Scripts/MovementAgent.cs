@@ -24,7 +24,7 @@ public class MovementAgent : MonoBehaviour
             return;
         }
 
-            Vector3 dir = (m_Target - transform.position).normalized;
+        Vector3 dir = (m_Target - transform.position).normalized;
         Vector3 delta = dir * (m_Speed * Time.deltaTime);
         transform.Translate(delta);
     }
