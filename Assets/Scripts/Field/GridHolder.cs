@@ -59,9 +59,9 @@ namespace Field
                 Vector3 difference = hitPosition - m_Offset;
 
                 int x = (int) (difference.x / m_NodeSize);
-                int y = (int) (difference.z / m_NodeSize);
-                
-                Debug.Log(message: x.ToString() + " " + y);
+                int y = (int) (difference.y / m_NodeSize);
+
+                Debug.Log(x + " " + y);
             }
         }
 
